@@ -1,0 +1,24 @@
+﻿<Window x:Class="SerialToKey.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SerialToKey"
+        mc:Ignorable="d"
+        Title="Arduino Serial To Key" Height="335.526" Width="542.105" ResizeMode="CanMinimize">
+    <Grid>
+        <Button x:Name="button" Content="Start" HorizontalAlignment="Left" Margin="147,137,0,0" VerticalAlignment="Top" Width="104" Height="30" Click="button_Click"/>
+        <Button x:Name="button1" Content="Stop" HorizontalAlignment="Left" Margin="147,180,0,0" VerticalAlignment="Top" Width="104" Height="31" Click="button1_Click"/>
+        <TextBox x:Name="textBlock" HorizontalAlignment="Left" Height="228" Margin="273,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" AcceptsReturn="True" Padding="5" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="29" Margin="110,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Padding="5"/>
+        <Label x:Name="label" Content="COM PORT" HorizontalAlignment="Left" Margin="19,45,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="eg. COM2,COM1,etc" HorizontalAlignment="Left" Margin="110,71,0,0" VerticalAlignment="Top" Width="141" FontSize="8"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="28" Margin="110,92,0,0" VerticalAlignment="Top" Width="141">
+            <ComboBoxItem Name="cbi1">2400</ComboBoxItem>
+            <ComboBoxItem Name="cbi2">9600</ComboBoxItem>
+            <ComboBoxItem Name="cbi3">14400</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="label2" Content="Baud rate" HorizontalAlignment="Left" Height="30" Margin="19,90,0,0" VerticalAlignment="Top" Width="69"/>
+
+    </Grid>
+</Window>
